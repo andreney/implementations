@@ -98,4 +98,17 @@ function validarCadastro(){
 		$('.alert').show();
 	}
 }
+
+var inputs = ["lastName", "firstName"];
+		
+validacaoJavascript(inputs, 'vazio');
+
+function validacaoJavascript(array = [], tipo){
+	for (var i = 0; i < array.length; i++) {
+		//console.log('Você enviou o campo '+array[i]+' para validar como '+tipo);
+		if(tipo == 'vazio'){
+			vazio(array[i]);
+		}
+	}
+}
 */
